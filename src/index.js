@@ -1,6 +1,14 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import { cardTitleContainer } from './card/titleContainer';
+import { cardTemperatureContainer } from './card/temperatureInfo';
+import { overcast
+} from './card/overcast';
 
-console.log('Happy hacking :)')
+// THIS IS THE ROOT of card
+const card = document.querySelector("article")
+
+// Add all element of card container
+card.append(
+  cardTitleContainer,
+  cardTemperatureContainer,
+  overcast
+)
