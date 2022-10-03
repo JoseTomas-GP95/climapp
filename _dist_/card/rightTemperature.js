@@ -1,7 +1,12 @@
-export const rightTemperatureContainer = document.createElement("div")
+export const createRightTemperatureContainer = () => {
+  const rightTemperatureContainer = document.createElement("div")
 
-const iconSun = document.createElement("p")
-  iconSun.textContent = "🌤️"
-  iconSun.className = "text-7xl"
+  const iconSun = document.createElement("p")
+    iconSun.textContent = "🌤️"
+    iconSun.className = "text-7xl"
+  
+  rightTemperatureContainer.append(iconSun)
 
-rightTemperatureContainer.append(iconSun)
+  return rightTemperatureContainer
+}
+
